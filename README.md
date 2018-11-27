@@ -58,6 +58,35 @@ webElem <- remDr$findElement('css', '.curr')
 Sys.sleep(2)
 scrollTo(remDr, webElem)
 
+#Done with Selenium. Now use *rvest* to collect data and *stringr* to massage it 
+library(rvest)
+#install.packages("stringr")
+library(stringr)
+pg <- remDr$getPageSource() %>% .[[1]] %>% read_html()
+
+#Function to get the page, then get me all the nodes, then turn into a text
+collect_realEstate <- function(pg){
+  #This pipe gets the address. *Data Massage needed*
+  address <- pg %>% html_nodes(".address-container") %>% 
+    html_text()
+  
+  #Add a line in case of error: "Column must be lenght 1 or ..., not ..."
+  #farms <- c(farms, NA)
+  
+  #This pipe gets the price.
+  price <- pg %>% html_nodes(".price") %>% 
+    html_text() %>% gsub("[^0-9]", "",.) %>% as.numeric
+  
+  #This pipe gets the characteristics. *Data Massage needed*
+  characteristics <- pg %>% html_nodes(".characteristics-cnt") %>% 
+    html_text() 
+  
+  agency <- pg %>% html_nodes(".agent-company") %>% 
+    html_text() %>% string_replace_all("\n", "")
+  
+  tibble(address, price, characteristics, agency)
+}
+
 
 #End of Real Estate
 
