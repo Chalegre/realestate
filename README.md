@@ -1,2 +1,2 @@
-# realstate
-Project to apply the knowledge acquired in R for a "real example
+# realestate
+Project to apply the knowledge acquired in R for a "real example"
