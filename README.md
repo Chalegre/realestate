@@ -119,4 +119,18 @@ pg_realestate002 <- collect_realEstate(pg002)
 
 #Next: Turn this into a function :(
 
+#####################################Deprecated: GoogleMaps now requires users to register for and use an api key. There are an update on ggmap is dev available
+install.packages("ggmap")
+library(ggmap)
+
+#Calgary coordinates
+calgary_coord <- c(long = -114.062019, lat = 51.044270)
+
+#Get map
+calgary_map <- get_map(location = calgary_coord, zoom = 11, scale = 2)
+
+#Plot map
+ggmap(calgary_map)
+#####################################Deprecated
+
 #End of Real Estate
