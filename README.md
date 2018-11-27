@@ -14,120 +14,52 @@ library("RSelenium")
 #Check installed pacakages
 installed.packages()
 
-#Start of mess
-library("xml2")
-library("httr")
-library("RSelenium")
-library("rvest")
+#Real Estate Begin
 
-installed.packages()
+##Check if robots are allowed
+address <- "https://www.point2homes.com/"
+rob <- robotstxt(address)
+rob$permissions
+robotstxt::get_robotstxt(address)
+robotstxt::paths_allowed(address)
 
-address <- "https://www.remax.ca/"
-webpage <- read_html(address)
-rank_data_html <- html_nodes(webpage, css = ".price")
-rank_data <- html_text(rank_data_html)
-head(rank_data)
-
-#Lego Movie
-library(rvest)
-#> Loading required package: xml2
-html <- read_html("http://www.imdb.com/title/tt1490017/")
-cast <- html_nodes(html, css = ".summary_text")
-cast_text <- html_text(cast)
-as.character(cast_text)
-
-odd <- html_nodes(html, css = "#titleCast td:nth-child(2)")
-odd_text <- html_text(odd)
-odd_text
-length(odd_text)
-
-#Realtor
-address <- "https://www.realtor.ca/"
-rm <- remoteDriver$new(port = 4445L)
-rm$open(silent = FALSE)
-rm$show()
-rm$screenshot()
-rm$navigate(address)
-#rm$getActiveElement("price")
-rm$getTitle()
-#rm$getClass()
-remDr$screenshot(display = TRUE)
-rm$close()
-
-#VNC Test
-remDr <- remoteDriver(port = 4445L)
-remDr$open(silent = TRUE)
-remDr$navigate("http://www.google.com/ncr")
-webElem <- remDr$findElement(using = "css", "[name = 'q']")
-webElem$sendKeysToElement(list("real estate in calgary"))
-webElem$sendKeysToElement(list(key = "enter"))
-remDr$close()
-
-
-
-#RSelenium
-remDr <- remoteDriver(port = 4445L)
-remDr$open(silent = TRUE)
-remDr$navigate("http://www.google.com/ncr")
-webElem <- remDr$findElement(using = "css", "[name = 'q']")
-webElem$sendKeysToElement(list("R Cran", "\uE007")) #"\uE007" Enter
-page <- xml2::read_html(remDr$getPageSource()[[1]])
-
-rvest::html_nodes(page, css = ".LC20lb")
-
-%>% rvest::html_nodes("LC20lb")
-rvest::html_nodes("#ddlCountry") %>%
-  rvest::html_children() %>%
-  rvest::html_text() %>%
-  dplyr::data_frame(country_name = .)
-
-
-webElems <- remDr$findElement(using = 'css selector', "h3.LC20lb")
-
-resHeaders <- unlist(lapply(webElems, function(x){x$getElementText()}))
-resHeaders
-
-
-
-#Trial 3
+##Accessing the webpage
 library(RSelenium)
-library(rvest)
-library("xml2")
-library(tidyverse)
-library(dplyr)
+robotstxt::paths_allowed()
 
+remDr <- remoteDriver(remoteServerAddr = "127.0.1.1",
+                      port = 4445L,
+                      browser = "chrome" )
 
-remDr <- remoteDriver(port = 4445L)
 remDr$open(silent = TRUE)
-remDr$navigate("http://apps.who.int/bloodproducts/snakeantivenoms/database/SearchFrm.aspx")
+remDr$navigate(address)
 
-#Creating A List Of Countries
-xml2::read_html(remDr$getPageSource()[[1]])
+#Find, highlight and click search box
+webElem <- remDr$findElement("xpath", '//input[starts-with(@class, "location-field")]')
+Sys.sleep(3)
+webElem$highlightElement()
+webElem$clickElement()
 
-snake_countries <- xml2::read_html(remDr$getPageSource()[[1]]) %>%
-  rvest::html_nodes("#ddlCountry") %>%
-  rvest::html_children() %>%
-  rvest::html_text() %>%
-  dplyr::data_frame(country_name = .)
+#Write the search and hit enter
+#webElem$sendKeysToElement(list("Calgary"))
+Sys.sleep(3)
+webElem$sendKeysToElement(list(key = "enter"))
 
-snake_countries <- snake_countries %>%
-  dplyr::mutate(list_position = 1:160,
-                x = stringr::str_c("#ddlCountry > option:nth-child(",list_position, ")"))
+#Funtion to move to web element
+scrollTo <- function(remDr, webElem){
+  remDr$executeScript("arguments[0].scrollIntoView(true);", args = list(webElem))
+  webElem$highlightElement()
+}
 
-# We chop off our first one as we are never going to navigate to there
-snake_countries <- snake_countries[-1,]
+#Define the page button in at the end of the page as an element
+webElem <- remDr$findElement('css', '.curr')
 
-
-#Navigating to a specific country
-element<- remDr$findElement(using = 'css selector', "#ddlCountry > option:nth-child(65)")
-element$clickElement()
-
-#Printing
-html <- xml2::read_html(remDr$getPageSource()[[1]])
-xml2::write_html(html, "india.html")
+#Navigate to the part where the page button is
+Sys.sleep(2)
+scrollTo(remDr, webElem)
 
 
-#End of mess
+#End of Real Estate
 
 
 
