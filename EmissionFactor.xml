@@ -1,0 +1,328 @@
+<?xml version='1.0'?>
+<?mso-application progid='Excel.Sheet'?>
+<Workbook xmlns='urn:schemas-microsoft-com:office:spreadsheet' 
+xmlns:o='urn:schemas-microsoft-com:office:office' 
+xmlns:x='urn:schemas-microsoft-com:office:excel' 
+xmlns:ss='urn:schemas-microsoft-com:office:spreadsheet' 
+xmlns:html='http://www.w3.org/TR/REC-html40'>
+<DocumentProperties xmlns='urn:schemas-microsoft-com:office:office'>
+<Author>Medgate</Author>
+<LastAuthor>Medgate</LastAuthor>
+<Created>2020-06-22T00:00:00Z</Created>
+<LastSaved>2020-06-22T00:00:00Z</LastSaved>
+<Company>Medgate</Company>
+<Version>11.9999</Version>
+</DocumentProperties>
+<ExcelWorkbook xmlns='urn:schemas-microsoft-com:office:excel'>
+<WindowHeight>13800</WindowHeight>
+<WindowWidth>21915</WindowWidth>
+<WindowTopX>120</WindowTopX>
+<WindowTopY>105</WindowTopY>
+<ProtectStructure>False</ProtectStructure>
+<ProtectWindows>False</ProtectWindows>
+</ExcelWorkbook>
+<Styles>
+<Style ss:ID='Default' ss:Name='Normal'>
+<Alignment ss:Vertical='Bottom'/>
+<Borders/>
+<Font/>
+<Interior/>
+<NumberFormat/>
+<Protection/>
+</Style>
+<Style ss:ID='s22'>
+<Interior ss:Color='#C0C0C0' ss:Pattern='Solid'/>
+<Font x:Family='Swiss' ss:Bold='1' x:Size='8' ss:Size='8' />
+</Style>
+<Style ss:ID='s25'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' />
+</Style>
+<Style ss:ID='styleBlack'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+</Style>
+<Style ss:ID='styleSilver'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Silver' />
+</Style>
+<Style ss:ID='styleGray'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Gray' />
+</Style>
+<Style ss:ID='styleMaroon'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Maroon' />
+</Style>
+<Style ss:ID='styleRed'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Red' />
+</Style>
+<Style ss:ID='stylePurple'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Purple' />
+</Style>
+<Style ss:ID='styleFuchsia'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Fuchsia' />
+</Style>
+<Style ss:ID='styleGreen'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Green' />
+</Style>
+<Style ss:ID='styleLime'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Lime' />
+</Style>
+<Style ss:ID='styleOlive'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Olive' />
+</Style>
+<Style ss:ID='styleYellow'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Yellow' />
+</Style>
+<Style ss:ID='styleOrange'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Orange' />
+</Style>
+<Style ss:ID='styleNavy'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Navy' />
+</Style>
+<Style ss:ID='styleBlue'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Blue' />
+</Style>
+<Style ss:ID='styleTeal'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Teal' />
+</Style>
+<Style ss:ID='styleAqua'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Aqua' />
+</Style>
+<Style ss:ID='styleBlackBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Black' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleSilverBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Silver' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleGrayBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Gray' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleMaroonBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Maroon' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleRedBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Red' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='stylePurpleBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Purple' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleFuchsiaBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Fuchsia' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleGreenBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Green' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleLimeBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Lime' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleOliveBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Olive' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleYellowBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Yellow' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleOrangeBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Orange' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleNavyBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Navy' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleBlueBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Blue' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleTealBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Teal' ss:Pattern='Solid' />
+</Style>
+<Style ss:ID='styleAquaBackground'>
+<Font x:Family='Swiss' x:Size='8' ss:Size='8' ss:Color='Black' />
+<Interior ss:Color='Aqua' ss:Pattern='Solid' />
+</Style>
+</Styles>
+<Worksheet ss:Name='Sheet1'>
+<Table><Column ss:Width='150'/><Column ss:Width='150'/><Row ss:StyleID='s22'><Cell>
+<Data ss:Type='String'>Code</Data>
+</Cell>
+<Cell>
+<Data ss:Type='String'>Description</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>C2F6-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Perfluorethane (C2F6) to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>C4F10-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent Perfluorobutane (C4F10) to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>C6F14-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent Perfluorohexane (C6F14) to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>CF4-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent Perfluoromethane (CF4) to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>CH4-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent Methane (CH4) to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>ENER-COAL</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Energy Usage - Coal</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>ENER-COKE</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Energy Usage - Coke</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>ENER-DEST-FOIL</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Energy Usage - Distillate Fuel Oil</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>ENER-LPG</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Energy Usage - LPG</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>ENER-NG</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Energy Usage - Natural Gas</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>ENER-RESID-FOIL</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Energy Usage - Residual Fuel Oil</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>ENER-STEAM</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Energy Usage - Steam</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC125-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC125 to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC134A-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC134a to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC143a-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC143a to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC152a-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC152a to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC227-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC227 to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC236fa-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC236fa to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC23-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC23 to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC32-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC32 to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFC4310mee-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFC4310mee to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>HFO1233zd-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent HFO1233zd to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>N2O-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent Nitrous Oxide (NO2) to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>OTHER-HFC</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent other HFC&#039;s to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>OTHER-PFC</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent other PFC&#039;s to CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>PROC-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Process CO2</Data>
+</Cell>
+</Row><Row ss:StyleID='s25'><Cell ss:StyleID='s25'>
+<Data ss:Type='String'>SF6-CO2</Data>
+</Cell>
+<Cell ss:StyleID='s25'>
+<Data ss:Type='String'>Equivalent Sulfur Hexafluoride(SF6) to CO2</Data>
+</Cell>
+</Row></Table>
+<WorksheetOptions xmlns='urn:schemas-microsoft-com:office:excel'>
+<ProtectObjects>False</ProtectObjects>
+<ProtectScenarios>False</ProtectScenarios>
+</WorksheetOptions>
+</Worksheet>
+</Workbook>
